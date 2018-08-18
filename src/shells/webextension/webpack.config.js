@@ -39,17 +39,6 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        query: {
-          failOnWarning: false,
-          failOnError: process.env.NODE_ENV !== 'development',
-          fix: process.env.NODE_ENV === 'development',
-          cache: false,
-        },
-      },
-      {
         test: /\.tsx?$/,
         loader: 'ts-loader',
       },
